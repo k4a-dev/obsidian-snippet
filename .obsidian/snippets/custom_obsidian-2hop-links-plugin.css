@@ -1,0 +1,186 @@
+/* 
+ * プラグイン:https://github.com/tokuhirom/obsidian-2hop-links-plugin 
+ * 参考:https://notes.yurudream.com/00+Apps%2Cservice/Obsidian/Ob-plugin+2hop+link
+ */
+
+.twohop-links-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.twohop-links-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* each block */
+.twohop-links-box {
+  box-sizing: border-box;
+  width: 135px !important;
+  height: 135px !important;
+
+  padding: 5px !important;
+
+  margin: 0px !important;
+  color: var(--text-normal) !important;
+  border-radius: 0px !important;
+  border: none !important;
+  cursor: pointer;
+  background-color: var(--background-primary) !important;
+}
+
+.twohop-links-section:after {
+  display: none !important;
+}
+
+.twohop-links-box:hover {
+  text-decoration: underline;
+}
+
+.twohop-links-box-preview {
+  color: var(--text-normal) !important;
+  font-size: 20%;
+}
+
+.twohop-links-box-title {
+  font-weight: bold;
+}
+
+/* new links */
+.twohop-links-new-links-header {
+  border-color: var(--newlink-color) !important;
+  background-color: var(--newlink-color) !important;
+}
+
+.twohop-links-new-links-header,
+.twohop-links-twohop-header,
+.twohop-links-connected-links-header {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.twohop-links-connected-links-header,
+.twohop-links-twohop-header,
+.twohop-links-tag-header,
+.twohop-links-new-links-header {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.twohop-links-connected-links-header {
+  width: 100% !important;
+  height: auto !important;
+  cursor: default;
+  text-decoration: none !important;
+}
+
+.twohop-links-box-preview {
+  color: var(--text-muted) !important;
+}
+
+/* Header Color */
+/* connected links */
+.twohop-links-connected-links-header {
+  border-color: var(--text-accent) !important;
+  background-color: var(--interactive-accent) !important;
+}
+
+/* two hop links */
+.twohop-links-twohop-header {
+  border-color: #dda965b0 !important;
+  color: var(--text-normal) !important;
+  background-color: var(--background-modifier-border) !important;
+}
+
+/* tags */
+.twohop-links-tag-header {
+  clear: both;
+  border-color: #b34d4d91 !important;
+  background-color: #b34d4d91 !important;
+}
+
+/* is PC */
+@media (min-width: 768px) {
+  /*  START - Obsidian */
+  .cm-contentContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    --twohopcontainer-width: 200px;
+    align-items: start;
+    justify-content: center;
+
+    position: relative;
+  }
+
+  .cm-content {
+    width: calc(100% - var(--twohopcontainer-width) - 10px);
+  }
+  /* END - Obsidian */
+
+  /* START - Twohop-link */
+  /* Container */
+  .twohop-links-container {
+    margin: 0px !important;
+    padding: 0px 5px !important;
+  }
+
+  /* Section */
+  .twohop-links-section {
+    width: var(--twohopcontainer-width) !important;
+  }
+
+  /* Header */
+  .twohop-links-connected-links-header,
+  .twohop-links-twohop-header,
+  .twohop-links-tag-header,
+  .twohop-links-new-links-header {
+    text-align: center;
+    height: auto !important;
+    min-height: var(--linkHeaderHeight) !important;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Box */
+  .twohop-links-box {
+    width: 100% !important;
+    /* height: calc(2.4rem + 10px) !important; */
+    height: calc(1rem + 10px) !important;
+
+    --linkHeaderHeight: 1rem;
+
+    padding: 5px !important;
+  }
+
+  /* Title */
+  .twohop-links-box-title {
+    font-size: 0.8rem;
+    overflow: hidden;
+    font-weight: normal;
+
+    /* 折り返す */
+    /* word-break: break-all; */
+    /* overflow-wrap: break-word; */
+    /* line-height: 1.5; */
+    /* max-height: 2.4rem; */
+    /* margin-bottom: 5px; */
+
+    /* 折り返さない */
+    word-wrap: none;
+    overflow-wrap: normal;
+    white-space: pre;
+  }
+
+  /* Preview */
+  .twohop-links-box-preview {
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
+  }
+}

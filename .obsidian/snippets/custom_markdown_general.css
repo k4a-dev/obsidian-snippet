@@ -1,0 +1,192 @@
+.HyperMD-task-line[data-task="x"] {
+  text-decoration: line-through !important;
+}
+
+td,
+th {
+  border-color: var(--text-normal) !important;
+}
+
+.app-container {
+  --header-color: var(--text-normal);
+  --h2-color: var(--header-color) !important;
+  --h3-color: var(--header-color) !important;
+  --h4-color: var(--header-color) !important;
+  --h5-color: var(--header-color) !important;
+
+  --newlink-color: rgba(109, 204, 116);
+}
+
+/* Heading2 */
+
+.cm-header-2 {
+  border-bottom: 2px solid var(--header-color);
+}
+
+.cm-line.HyperMD-header.HyperMD-header-2:not(:first-child) {
+  padding: 2em 0px 0px 0px !important;
+  /* Marginを設定すると選択範囲がおかしくなる */
+  /* margin: 1em 0px !important;  */
+}
+.HyperMD-header-2 {
+  border: none !important;
+}
+
+/* Heading3 */
+
+.HyperMD-header-3:not(:first-child) {
+  padding: 1em 0px 0px 0px !important;
+}
+
+.HyperMD-header-3 > .cm-header-3 {
+}
+
+/* Heading4 */
+:not(.cm-active) > .cm-header-4 {
+  font-weight: bold !important;
+  border-bottom: 1px solid var(--header-color);
+}
+
+.HyperMD-header-4 {
+  padding: 0.5em 0px 0px 0px !important;
+}
+
+.cm-header-4 {
+  text-transform: none !important;
+}
+
+/* Heading5 */
+
+/* Quote */
+.HyperMD-quote {
+  color: var(--text-normal) !important;
+  background: var(--background-secondary) !important;
+  /* padding: 0.5em !important; */
+}
+
+.cm-quote {
+  color: var(--text-normal) !important;
+}
+
+/* Link */
+.cm-hmd-internal-link .cm-underline,
+.cm-link .cm-underline,
+.cm-url .cm-underline,
+.cm-url {
+  text-decoration: none !important;
+}
+
+.cm-hmd-internal-link,
+.cm-link,
+.cm-url {
+  color: var(--text-accent) !important;
+  /* font-weight: bold; */
+}
+
+.cm-hmd-internal-link .is-unresolved {
+  /* color: var(--newlink-color) !important; */
+  /* opacity: 1 !important; */
+}
+
+.cm-line:not(.cm-active) .cm-hmd-internal-link .is-unresolved::after {
+  /* content: "(!)"; */
+  /* font-size: 0.7em; */
+  color: var(--newlink-color) !important;
+}
+
+.cm-underline:hover {
+  text-decoration: underline !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
+    .cm-contentContainer {
+    max-width: 1200px;
+    border-top: none;
+    border-bottom: none;
+    padding: 0px;
+  }
+
+  .cm-content {
+    background: var(--background-primary) !important;
+    border-radius: 0.4em;
+    padding: 1em !important;
+    margin-bottom: 50% !important;
+  }
+
+  .view-header-title-container {
+    width: auto;
+  }
+
+  .markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width
+    .cm-line:not(.HyperMD-table-row) {
+    max-width: 100% !important;
+  }
+
+  .markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width
+    .cm-content {
+    max-width: 100% !important;
+  }
+  .workspace-split.mod-root .view-content {
+    background-color: var(--background-secondary) !important;
+  }
+
+  .workspace-leaf-header,
+  .view-header {
+    background-color: var(--background-secondary) !important;
+  }
+}
+
+/* Outline Pane */
+.tree-item-children {
+  margin-left: 1em;
+}
+
+.tree-item-self {
+  /* color: var(--text-normal); */
+}
+
+.tree-item-self:hover {
+  font-weight: bold;
+}
+
+.tree-item-inner::before {
+  /* content: "・"; */
+}
+
+.tree-item-icon + .tree-item-inner::before {
+  /* content: none; */
+}
+
+.mermaid * {
+  stroke: var(--text-normal) !important;
+}
+
+.cm-inline-code {
+  color: var(--text-error-hover) !important;
+  padding: 0.1em 0.3em !important;
+  background-color: var(--background-secondary-alt) !important;
+  border-radius: 0.2em;
+}
+
+/* Embeds */
+
+.markdown-embed-title {
+  background: var(--background-secondary);
+}
+.internal-embed .markdown-embed {
+  /* border: 4px solid var(--background-secondary) !important; */
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.markdown-embed-content.markdown-embed-page {
+  border: 4px solid var(--background-secondary) !important;
+  padding: 0.5em;
+}
+
+.markdown-source-view .cm-table-widget {
+  max-width: 100%;
+  overflow: scroll;
+}

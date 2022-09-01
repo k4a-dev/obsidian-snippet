@@ -1,0 +1,114 @@
+.cm-line.HyperMD-header.HyperMD-header-2 {
+  padding: 2em 0px 0px 0px !important;
+  /* Marginを設定すると選択範囲がおかしくなる */
+  /* margin: 1em 0px !important;  */
+}
+
+.HyperMD-task-line[data-task="x"] {
+  text-decoration: line-through !important;
+}
+
+td,
+th {
+  border-color: var(--text-normal) !important;
+}
+
+.app-container {
+  --header-color: var(--text-normal);
+  --h2-color: var(--header-color) !important;
+  --h3-color: var(--header-color) !important;
+  --h4-color: var(--header-color) !important;
+  --h5-color: var(--header-color) !important;
+
+  /* --background-primary: hsl(var(--base-h), var(--base-s), var(--base-l));
+  --background-secondary: white; */
+}
+
+/* Heading2 */
+.HyperMD-header-2 {
+  border: none !important;
+}
+
+.cm-header-2 {
+  border-bottom: 2px solid var(--header-color);
+}
+
+/* Heading3 */
+
+.HyperMD-header-3 {
+  padding: 1em 0px 0px 0px !important;
+}
+
+.HyperMD-header-3 > .cm-header-3 {
+}
+
+/* Heading4 */
+:not(.cm-active) > .cm-header-4 {
+  font-weight: bold !important;
+  padding: 0.1em 0.5em !important;
+  border-radius: 0.3em;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.cm-header-4 {
+  text-transform: none !important;
+}
+
+/* Heading5 */
+
+/* Quote */
+.HyperMD-quote {
+  color: var(--text-normal) !important;
+  background: var(--background-secondary) !important;
+  padding: 0.5em !important;
+}
+
+.cm-quote {
+  color: var(--text-normal) !important;
+}
+
+/* Link */
+.cm-hmd-internal-link .cm-underline,
+.cm-link .cm-underline,
+.cm-url .cm-underline {
+  text-decoration: none !important;
+  /* text-decoration: underline !important; */
+  color: var(--text-accent) !important;
+  font-weight: bold;
+  /* color: var(--text-normal) !important; */
+}
+
+@media screen and (min-width: 1000px) {
+  .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl)
+    .cm-contentContainer {
+    max-width: 1200px;
+    background: var(--background-primary) !important;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 1em;
+    padding: 0px 2em;
+  }
+
+  .view-header-title-container {
+    max-width: 1200px !important;
+    width: auto;
+  }
+
+  .markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width
+    .cm-line:not(.HyperMD-table-row) {
+    max-width: 100% !important;
+  }
+
+  .markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width
+    .cm-content {
+    max-width: 100% !important;
+  }
+  .workspace-split.mod-root .view-content {
+    background-color: var(--background-secondary) !important;
+  }
+
+  .workspace-leaf-header,
+  .view-header {
+    background-color: var(--background-secondary) !important;
+  }
+}

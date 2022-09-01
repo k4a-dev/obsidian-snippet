@@ -1,0 +1,110 @@
+/* 
+ * プラグイン:https://github.com/tokuhirom/obsidian-2hop-links-plugin 
+ * 参考:https://notes.yurudream.com/00+Apps%2Cservice/Obsidian/Ob-plugin+2hop+link
+ */
+
+/** For 2hoplink **/
+
+/* container */
+
+@media screen and (min-width: 1000px) {
+  .twohop-links-container {
+    padding: 10px;
+  }
+}
+.twohop-links-container {
+  border-left: none;
+  border-right: none;
+}
+
+.theme-dark .twohop-links-container {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.theme-light .twohop-links-container {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.twohop-links-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+/* each block */
+.twohop-links-box {
+  box-sizing: border-box;
+  width: 135px !important;
+  height: 135px !important;
+  /* max-width: calc(50% - 5px); */
+
+  float: left;
+  padding: 5px !important;
+
+  margin: 0px !important;
+  color: var(--text-normal) !important;
+  border-radius: 2px !important;
+  overflow: hidden;
+  border: none !important;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.twohop-links-section:after {
+  display: none !important;
+}
+
+.twohop-links-box:not(.twohop-links-connected-links-header):not(.twohop-links-twohop-header) {
+  flex-grow: 1;
+}
+
+.twohop-links-box:hover {
+  text-decoration: underline;
+}
+
+.twohop-links-box-preview {
+  color: var(--text-normal) !important;
+  font-size: 20%;
+}
+
+.twohop-links-box-title {
+  font-weight: bold;
+}
+
+/* connected links */
+.twohop-links-connected-links-header {
+  border-color: #4d9fdaa8 !important;
+  background-color: #4d9fdaa8 !important;
+}
+
+/* two hop links */
+.twohop-links-resolved .twohop-links-twohop-header {
+  clear: both;
+  border-color: #dda965b0 !important;
+  background-color: #dda965b0 !important;
+}
+
+.twohop-links-unresolved .twohop-links-twohop-header {
+  clear: both;
+  border-color: #e0df86cc !important;
+  background-color: #e0df86cc !important;
+}
+
+/* tags */
+.twohop-links-tag-header {
+  clear: both;
+  border-color: #b34d4d91 !important;
+  background-color: #b34d4d91 !important;
+}
+
+/* new links */
+.twohop-links-new-links-header {
+  border-color: rgba(109, 204, 116, 0.678) !important;
+  background-color: rgba(109, 204, 116, 0.678) !important;
+}
+
+/* obsidianのデフォルトpaddingの上書き */
+.cm-content {
+  padding-bottom: 100px !important;
+}

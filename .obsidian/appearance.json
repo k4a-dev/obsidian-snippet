@@ -1,0 +1,11 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "Things",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "custom_markdown_general",
+    "custom_obsidian-2hop-links-plugin"
+  ],
+  "baseFontSize": 20,
+  "textFontFamily": "HGP行書体"
+}

@@ -1,0 +1,30 @@
+{
+  "alwaysUpdateLinks": true,
+  "legacyEditor": false,
+  "readableLineLength": true,
+  "showLineNumber": true,
+  "attachmentFolderPath": "attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "/",
+  "useTab": true,
+  "tabSize": 2,
+  "foldIndent": true,
+  "showFrontmatter": false,
+  "foldHeading": true,
+  "rightToLeft": false,
+  "newLinkFormat": "shortest",
+  "mobileToolbarCommands": [
+    "editor:indent-list",
+    "editor:unindent-list",
+    "editor:insert-wikilink",
+    "editor:insert-embed",
+    "editor:attach-file",
+    "editor:insert-link",
+    "editor:toggle-bullet-list",
+    "editor:toggle-checklist-status",
+    "editor:undo",
+    "editor:redo",
+    "editor:toggle-keyboard",
+    "editor:configure-toolbar"
+  ]
+}
