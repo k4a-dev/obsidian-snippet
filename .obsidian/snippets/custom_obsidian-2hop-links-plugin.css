@@ -48,15 +48,10 @@
   font-weight: bold;
 }
 
-/* new links */
-.twohop-links-new-links-header {
-  border-color: var(--newlink-color) !important;
-  background-color: var(--newlink-color) !important;
-}
-
 .twohop-links-new-links-header,
 .twohop-links-twohop-header,
-.twohop-links-connected-links-header {
+.twohop-links-connected-links-header,
+.twohop-links-tag-header {
   font-size: 0.8em;
   font-weight: bold;
 }
@@ -83,22 +78,24 @@
 /* Header Color */
 /* connected links */
 .twohop-links-connected-links-header {
-  border-color: var(--text-accent) !important;
   background-color: var(--interactive-accent) !important;
 }
 
 /* two hop links */
 .twohop-links-twohop-header {
-  border-color: #dda965b0 !important;
   color: var(--text-normal) !important;
   background-color: var(--background-modifier-border) !important;
+}
+
+/* new links */
+.twohop-links-new-links-header {
+  background-color: var(--interactive-accent) !important;
 }
 
 /* tags */
 .twohop-links-tag-header {
   clear: both;
-  border-color: #b34d4d91 !important;
-  background-color: #b34d4d91 !important;
+  background-color: #ffd8d191 !important;
 }
 
 /* is PC */

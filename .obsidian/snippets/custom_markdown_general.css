@@ -13,8 +13,6 @@ th {
   --h3-color: var(--header-color) !important;
   --h4-color: var(--header-color) !important;
   --h5-color: var(--header-color) !important;
-
-  --newlink-color: rgba(109, 204, 116);
 }
 
 /* Heading2 */
