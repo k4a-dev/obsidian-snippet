@@ -1,16 +1,7 @@
-## WHAT
-
 ## WHY
-
-## WHEN
-
-## HOW
-
-## PROBREM
-
-## タスク・ログ
-
-## メモ
-
-## タグ
+## How
+## Info
+## Task
+## Memo
+## Link
 - [[../目標]]

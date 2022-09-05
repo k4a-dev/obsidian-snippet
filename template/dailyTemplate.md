@@ -1,11 +1,10 @@
 ## 心構え
-- やった時間を記載する
+- やった時間を記載する(制限時間をきめる)
 - １分でもいいから必ず取り組む
 - 可能ならポモドーロで30分集中して取り組む
+- 一つのプロジェクトに注力する（終わったら次やっても良い）
 
 ## Day Planner
-Should Execute `Link today’s Day Planner to the current note` from Command Pallet.
-
 1. 朝のルーチン
 2. 昼の作業
 3. 夜のルーチン
@@ -13,12 +12,12 @@ Should Execute `Link today’s Day Planner to the current note` from Command Pal
 5. 就寝
 
 ### 朝のルーチン
-- [ ] [[部屋・PC内の改善]]1つ行う
+- [ ] 部屋などの改善
 - [ ] Inboxから今日やることに移す
 
 ### 昼の作業
 ### 夜のルーチン
-- [ ] 今日の振り返りを[[日記]]に書く
+- [ ] 今日の振り返り
 - [ ] Inboxのレビュー
 - [ ] ランニング 20~30m
 - [ ] プランク 10~15m
@@ -29,16 +28,12 @@ Should Execute `Link today’s Day Planner to the current note` from Command Pal
 - [ ] 23:30 日付が変わる前に寝る
 
 ## 今日やること
-※一つのプロジェクトに注力する（終わったら次やっても良い）
-※各小タスクには制限時間をきめる
 - プロジェクト
 - タスク
 
-## ポモドーロ
-- https://track.toggl.com/timer
-
 ## メモ
-> ※ここに放置せずPKM化すること
+※ここに放置せずPKM化すること
+- 
 
 ---
-←  [[{{yesterday}}]] 📅 [[{{tomorrow}}]] →
+← [[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") %>]] | 📅 | [[<% tp.date.now("YYYY-MM-DD", 1, tp.file.title, "YYYY-MM-DD") %>]]　→
