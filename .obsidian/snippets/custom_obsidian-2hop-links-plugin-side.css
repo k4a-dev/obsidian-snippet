@@ -1,0 +1,88 @@
+/* 
+ * プラグイン:https://github.com/tokuhirom/obsidian-2hop-links-plugin 
+ * 参考:https://notes.yurudream.com/00+Apps%2Cservice/Obsidian/Ob-plugin+2hop+link
+ */
+
+/* is PC */
+@media (min-width: 768px) {
+  /*  START - Obsidian */
+  .cm-contentContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    --twohopcontainer-width: 200px;
+    align-items: start;
+    justify-content: center;
+
+    position: relative;
+  }
+
+  .cm-content {
+    width: calc(100% - var(--twohopcontainer-width) - 10px);
+  }
+  /* END - Obsidian */
+
+  /* START - Twohop-link */
+  /* Container */
+  .twohop-links-container {
+    margin: 0px !important;
+    padding: 0px 5px !important;
+  }
+
+  /* Section */
+  .twohop-links-section {
+    width: var(--twohopcontainer-width) !important;
+  }
+
+  /* Header */
+  .twohop-links-connected-links-header,
+  .twohop-links-twohop-header,
+  .twohop-links-tag-header,
+  .twohop-links-new-links-header {
+    text-align: center;
+    height: auto !important;
+    min-height: var(--linkHeaderHeight) !important;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Box */
+  .twohop-links-box {
+    width: 100% !important;
+    /* height: calc(2.4rem + 10px) !important; */
+    height: calc(1rem + 10px) !important;
+
+    --linkHeaderHeight: 1rem;
+
+    padding: 5px !important;
+  }
+
+  /* Title */
+  .twohop-links-box-title {
+    font-size: 0.8rem;
+    overflow: hidden;
+    font-weight: normal;
+
+    /* 折り返す */
+    /* word-break: break-all; */
+    /* overflow-wrap: break-word; */
+    /* line-height: 1.5; */
+    /* max-height: 2.4rem; */
+    /* margin-bottom: 5px; */
+
+    /* 折り返さない */
+    word-wrap: none;
+    overflow-wrap: normal;
+    white-space: pre;
+  }
+
+  /* Preview */
+  .twohop-links-box-preview {
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
+  }
+}

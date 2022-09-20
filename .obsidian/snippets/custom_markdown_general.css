@@ -15,6 +15,13 @@ th {
   --h5-color: var(--header-color) !important;
 }
 
+.cm-content {
+  padding-bottom: 0px !important;
+}
+.cm-contentContainer {
+  margin-bottom: 50% !important;
+}
+
 /* Heading2 */
 
 .cm-header-2 {
@@ -109,7 +116,6 @@ th {
     background: var(--background-primary) !important;
     border-radius: 0.4em;
     padding: 1em !important;
-    margin-bottom: 50% !important;
   }
 
   .view-header-title-container {
@@ -187,4 +193,11 @@ th {
 .markdown-source-view .cm-table-widget {
   max-width: 100%;
   overflow: scroll;
+}
+
+/* 特定のタグ */
+.cm-tag-nextaction {
+  /* background: ; */
+  background: var(--red) !important;
+  color: var(--background-primary) !important;
 }
