@@ -17,7 +17,6 @@
   flex-direction: column;
   gap: 20px;
   margin-top: 50px;
-  background: var(--background-secondary) !important;
   padding: 2px;
 }
 
@@ -40,7 +39,8 @@
   border-radius: 0px !important;
   cursor: pointer;
   background-color: var(--background-primary) !important;
-  border: none !important;
+  /* border: none !important; */
+  border: 2px solid var(--background-secondary) !important;
 }
 
 .twohop-links-section:after {
