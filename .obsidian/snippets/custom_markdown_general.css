@@ -15,11 +15,28 @@ th {
 	--h5-color: var(--header-color) !important;
 }
 
+body {
+	/* Font families */
+	--font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Inter, Ubuntu, sans-serif;
+	--font-editor-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Inter, Ubuntu, sans-serif;
+	--font-monospace-theme: "JetBrains Mono", "Fira Code", Menlo, SFMono-Regular,
+		Consolas, "Roboto Mono", monospace;
+	--font-interface-theme: -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Inter, Ubuntu, sans-serif;
+	--font-editor: var(--font-editor-override), var(--font-text-override),
+		var(--font-editor-theme);
+}
+
 .cm-content {
 	padding-bottom: 0px !important;
 }
-.cm-contentContainer {
-	margin-bottom: 50% !important;
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content,
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
+	width: 1200px;
+	max-width: 100%;
 }
 
 /* Heading2 */
@@ -154,27 +171,6 @@ th {
 	}
 }
 
-/* Outline Pane */
-.tree-item-children {
-	margin-left: 1em;
-}
-
-.tree-item-self {
-	/* color: var(--text-normal); */
-}
-
-.tree-item-self:hover {
-	font-weight: bold;
-}
-
-.tree-item-inner::before {
-	/* content: "・"; */
-}
-
-.tree-item-icon + .tree-item-inner::before {
-	/* content: none; */
-}
-
 .mermaid * {
 	stroke: var(--text-normal) !important;
 }
@@ -221,15 +217,6 @@ th {
 	background: var(--red) !important;
 	color: var(--background-primary) !important;
 }
-
-.cm-tag-4star {
-	/* background: ; */
-	color: var(--background-primary) !important;
-}
-
-/* .cm-tag-4star::after {
-	content: "★";
-} */
 
 .HyperMD-table-row.cm-line {
 	white-space: normal !important;
