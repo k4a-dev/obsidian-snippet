@@ -27,6 +27,8 @@ body {
 		Roboto, Inter, Ubuntu, sans-serif;
 	--font-editor: var(--font-editor-override), var(--font-text-override),
 		var(--font-editor-theme);
+
+	--file-line-width: 1200px;
 }
 
 .cm-content {
@@ -45,8 +47,12 @@ body {
 	border-bottom: 2px solid var(--header-color);
 }
 
+.cm-line.HyperMD-header {
+	padding-bottom: 0.2em !important;
+}
+
 .cm-line.HyperMD-header.HyperMD-header-2:not(:first-child) {
-	padding: 2em 0px 0px 0px !important;
+	padding-top: 2em !important;
 	/* Marginを設定すると選択範囲がおかしくなる */
 	/* margin: 1em 0px !important;  */
 }
@@ -176,9 +182,9 @@ body {
 }
 
 .cm-inline-code {
-	color: var(--text-error-hover) !important;
+	color: var(--color-accent) !important;
 	padding: 0.1em 0.3em !important;
-	background-color: var(--background-secondary-alt) !important;
+	background-color: var(--background-secondary) !important;
 	border-radius: 0.2em;
 }
 
@@ -194,6 +200,8 @@ body {
 	border-radius: 5px;
 	/* background: var(--background-secondary); */
 	cursor: text;
+
+	font-weight: normal;
 }
 
 .markdown-embed-content.markdown-embed-page {

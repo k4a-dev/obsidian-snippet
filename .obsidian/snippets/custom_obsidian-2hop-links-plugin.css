@@ -13,59 +13,59 @@
 } */
 
 .twohop-links-container > div {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 50px;
-  padding: 2px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-top: 50px;
+	padding: 2px;
 }
 
 .twohop-links-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
 }
 
 /* each block */
 .twohop-links-box {
-  box-sizing: border-box;
-  width: 135px !important;
-  height: 135px !important;
+	box-sizing: border-box;
+	width: 135px !important;
+	height: 135px !important;
 
-  padding: 5px !important;
+	padding: 5px !important;
 
-  margin: 0px !important;
-  color: var(--text-normal) !important;
-  border-radius: 0px !important;
-  cursor: pointer;
-  background-color: var(--background-primary) !important;
-  /* border: none !important; */
-  border: 2px solid var(--background-secondary) !important;
+	margin: 0px !important;
+	color: var(--text-normal) !important;
+	border-radius: 0px !important;
+	cursor: pointer;
+	background-color: var(--background-primary) !important;
+	/* border: none !important; */
+	border: 2px solid var(--background-secondary) !important;
 }
 
 .twohop-links-section:after {
-  display: none !important;
+	display: none !important;
 }
 
 .twohop-links-box:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .twohop-links-box-preview {
-  color: var(--text-normal) !important;
-  font-size: 20%;
+	color: var(--text-normal) !important;
+	font-size: 0.8em;
 }
 
 .twohop-links-box-title {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .twohop-links-new-links-header,
 .twohop-links-twohop-header,
 .twohop-links-connected-links-header,
 .twohop-links-tag-header {
-  font-size: 0.8em;
-  font-weight: bold;
+	font-size: 0.8em;
+	font-weight: bold;
 }
 
 /* 
@@ -78,33 +78,33 @@
 } */
 
 .twohop-links-connected-links-header {
-  cursor: default;
-  text-decoration: none !important;
+	cursor: default;
+	text-decoration: none !important;
 }
 
 .twohop-links-box-preview {
-  color: var(--text-muted) !important;
+	color: var(--text-muted) !important;
 }
 
 /* Header Color */
 /* connected links */
 .twohop-links-connected-links-header {
-  background-color: var(--interactive-accent) !important;
+	background-color: var(--interactive-accent) !important;
 }
 
 /* two hop links */
 .twohop-links-twohop-header {
-  color: var(--text-normal) !important;
-  background-color: var(--background-modifier-border) !important;
+	color: var(--text-normal) !important;
+	background-color: var(--background-modifier-border) !important;
 }
 
 /* new links */
 .twohop-links-new-links-header {
-  background-color: var(--interactive-accent) !important;
+	background-color: var(--interactive-accent) !important;
 }
 
 /* tags */
 .twohop-links-tag-header {
-  clear: both;
-  background-color: #ffd8d191 !important;
+	clear: both;
+	background-color: #ffd8d191 !important;
 }
